@@ -1,5 +1,5 @@
 '''-- Jakob Koehler & Tolga Buz
-Reproduction of Koppel14
+Reproduction of Koppel11
 '''
 #--- Parameters:
 #n-gram size
@@ -166,7 +166,6 @@ def main():
 	jsonhandler.loadTraining()
 
 	texts = {}
-	#texts = frozenset() would this work??
 	corpus = ""
 	print("loading texts for training")
 	deletes = []
@@ -174,8 +173,6 @@ def main():
 		texts[cand] = ""
 		for file in jsonhandler.trainings[cand]:
 			texts[cand] += jsonhandler.getTrainingText(cand, file)
-			#if frozenset() is used:
-			#texts.add(jsonhandler.getTrainingText(cand, file))
 			print("text "+file+" read")
 		if len(texts[cand].split()) < mintrainlen:
 			del texts[cand]
