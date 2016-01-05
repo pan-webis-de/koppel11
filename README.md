@@ -1,5 +1,5 @@
-# koppel14
-M. Koppel, Y. Winter, Determining if two documents are written by the same author, Journal of the American Society for Information Science and Technology, 65(1):178-187, (2014)
+# koppel11
+M. Koppel, J. Schler, S. Argamon, Authorship attribution in the wild, Language Resources and Evaluation, 45:8394, (2011)
 
 #### Usage:
-`python impostors.py -i CORPUS_PATH -o OUTPUT_PATH`
+`python koppel11.py -i CORPUS_PATH -o OUTPUT_PATH`
