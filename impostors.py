@@ -14,6 +14,8 @@ repetitions = 100
 # (increases precision, but deteriorates recall, 
 # if there are many small documents)
 minlen = 0
+# candidates with less than this amount of words in trainingdata are not attributed to
+mintrainlen = 500
 
 #--- Imports:
 from math import sqrt
@@ -69,7 +71,7 @@ calculates cosine similarity of two vectors v1 and v2.
 -> cosine(X, Y) = (X * Y)/(|X|*|Y|)
 '''
 def cosSim(v1, v2):
-	sp = 0
+	sp = float(0)
 	len1 = 0
 	len2 = 0
 	for ngram in v1:
@@ -103,7 +105,9 @@ def minmax(v1, v2):
 	for ngram in v2:
 		if ngram not in v1:
 			#ngram only in v2
-			maxsum += v2[ngram]	
+			maxsum += v2[ngram]
+	if maxsum == 0:
+		return 0
 	return float(minsum)/maxsum
 
 '''- training: 
@@ -165,15 +169,29 @@ def main():
 	#texts = frozenset() would this work??
 	corpus = ""
 	print("loading texts for training")
+	deletes = []
 	for cand in candidates:
 		texts[cand] = ""
 		for file in jsonhandler.trainings[cand]:
 			texts[cand] += jsonhandler.getTrainingText(cand, file)
 			#if frozenset() is used:
 			#texts.add(jsonhandler.getTrainingText(cand, file))
-			corpus += texts[cand]
 			print("text "+file+" read")
-	minwords = min([len(texts[cand].split()) for cand in texts])
+		if len(texts[cand].split()) < mintrainlen:
+			del texts[cand]
+			deletes.append(cand)
+		else:
+			corpus += texts[cand]
+
+	newcands = []
+	for cand in candidates:
+		if cand not in deletes:
+			newcands.append(cand)
+	candidates = newcands
+	words = [len(texts[cand].split()) for cand in texts]
+	minwords = min(words)
+	print(minwords)
+
 	fl = training(corpus)
 	authors = []
 	scores = []
