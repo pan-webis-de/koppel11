@@ -55,7 +55,7 @@ loadGroundTruth()
 import os, json
 
 META_FNAME = "meta-file.json"
-OUT_FNAME = "out.json"
+OUT_FNAME = "answers.json"
 GT_FNAME = "ground-truth.json"
 
 # always run this method first to evaluate the meta json file. Pass the directory of the corpus (where meta-file.json is situated)
