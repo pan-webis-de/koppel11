@@ -38,7 +38,7 @@ The software accepts as input a path to an inflated dataset's `TOP_DIRECTORY` an
 }
 ```
 
-where `unknown_text` is the name of an unknown text as per `meta-file.json`, `author` is the name of a candidate author as per `meta-file.json`, and `score` is the real-valued confidence in the range [0,1] which indicates the software's certainty in its attribution (0 means completely uncertain, 1 means completely sure).
+where `unknown_text` is the name of an unknown text as per `meta-file.json`, `author` is the name of a candidate author as per `meta-file.json`, and `score` is as real value in the range [0,1] which indicates the software's confidence in its attribution (0 means completely uncertain, 1 means completely sure).
 
 ## License
 
