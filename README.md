@@ -38,7 +38,7 @@ The software accepts as input a path to an inflated dataset's `TOP_DIRECTORY` an
 }
 ```
 
-where "unknownX" is the name of an unknown text (from meta-file.json), "candidateY" is the name of a candidate author (from meta-file.json) and Z is a real-valued score in the range [0,1] which indicates the software's confidence in its answer (0 means completely uncertain, 1 means completely sure).
+where `unknownX` is the name of an unknown text as per `meta-file.json`, `candidateY` is the name of a candidate author and `Z` is a real-valued score in the range [0,1] which indicates the software's confidence in its answer (0 means completely uncertain, 1 means completely sure).
 
 ## License
 
