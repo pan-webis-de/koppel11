@@ -1,4 +1,4 @@
-# koppel11 - An Approach to Authorship Attribution
+## koppel11 - An Approach to Authorship Attribution
 
 This is a reimplmentation of the approach to authorship attribution originally described in
 
@@ -14,7 +14,7 @@ If you use this reimplementation in your own research, please make sure to cite 
 
 To execute the software, install it and make sure all its dependencies are installed as well; then run the software using the following command:
 
-`python koppel11.py -i PATH_TO_INPUT_DATA -o OUTPUT_PATH`
+`python koppel11.py <path-to-input-data> <output-path>`
 
 ## Input and Output Formats
 
