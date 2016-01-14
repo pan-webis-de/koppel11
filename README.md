@@ -32,13 +32,13 @@ The software accepts as input a path to an inflated dataset's `TOP_DIRECTORY` an
 ```json
 {
 "answers": [
-	{"unknown_text": "unknownX", "author": "candidateY", "score": Z},
-	...
+	{"unknown_text": "unknown00001.txt", "author": "candidate00001", "score": 0.8},
+	{"unknown_text": "unknown00002.txt", "author": "candidate00002", "score": 0.9}
 	]
 }
 ```
 
-where `unknownX` is the name of an unknown text as per `meta-file.json`, `candidateY` is the name of a candidate author and `Z` is a real-valued score in the range [0,1] which indicates the software's confidence in its answer (0 means completely uncertain, 1 means completely sure).
+where `unknown_text` is the name of an unknown text as per `meta-file.json`, `author` is the name of a candidate author as per `meta-file.json`, and `score` is the real-valued confidence in the range [0,1] which indicates the software's certainty in its attribution (0 means completely uncertain, 1 means completely sure).
 
 ## License
 
