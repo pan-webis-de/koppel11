@@ -2,7 +2,7 @@
 
 This is a reimplmentation of the approach to authorship attribution originally described in
 
-> M. Koppel and Y. Winter. [Determining if two documents are written by the same author](http://u.cs.biu.ac.il/~koppel/papers/impostors-journal-revised2-140213.pdf). Journal of the American Society for Information Science and Technology, 65(1):178-187, 2014 [[<paper>](http://u.cs.biu.ac.il/~koppel/papers/impostors-journal-revised2-140213.pdf)]
+> M. Koppel and Y. Winter. [Determining if two documents are written by the same author](http://u.cs.biu.ac.il/~koppel/papers/impostors-journal-revised2-140213.pdf). Journal of the American Society for Information Science and Technology, 65(1):178-187, 2014 [[paper](http://u.cs.biu.ac.il/~koppel/papers/impostors-journal-revised2-140213.pdf)]
 
 It was reimplemented as part of a science reproducibility study alongside [14 other authorship attribution approaches](https://github.com/search?q="Who+wrote+the+web"+user:pan-webis-de). The results of the reproducibility study can be found in
 
