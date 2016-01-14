@@ -18,7 +18,7 @@ To execute the software, install it and make sure all its dependencies are insta
 
 ## Input and Output Formats
 
-The software accepts authorship attribution datasets that are formatted according to the correspondong PAN shared task on authorship attribution. A number of datasets can be found there, and all of them are formatted as follows.
+The software accepts authorship attribution datasets that are formatted according to the correspondong [PAN shared task on authorship attribution](http://pan.webis.de/tasks.html). A number of [datasets can be found there](http://pan.webis.de/data.html), and all of them are formatted as follows.
 
 In a dataset's `TOP_DIRECTORY`, a `meta-file.json` is found which comprises
 
