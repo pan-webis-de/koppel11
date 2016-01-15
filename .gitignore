@@ -1,7 +1,2 @@
 __pycache__/
-C10/
-C50/
-pan11small/
-pan11large/
-pan12I/
-eval.py
+*.pyc
