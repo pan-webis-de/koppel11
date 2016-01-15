@@ -2,7 +2,7 @@
 
 This is a reimplementation of the approach to authorship attribution originally described in
 
-> M. Koppel, J. Schler, and S. Argamon. [Authorship attribution in the wild](https://www.researchgate.net/profile/Moshe_Koppel/publication/220147732_Authorship_attribution_in_the_wild/links/0deec52fd3fd6b60b3000000.pdf). Language Resources and Evaluation, 45:8394, 2011. [[paper](https://www.researchgate.net/profile/Moshe_Koppel/publication/220147732_Authorship_attribution_in_the_wild/links/0deec52fd3fd6b60b3000000.pdf)]
+> Moshe Koppel, Jonathan Schler, and Shlomo Argamon. [Authorship attribution in the wild](https://www.researchgate.net/profile/Moshe_Koppel/publication/220147732_Authorship_attribution_in_the_wild/links/0deec52fd3fd6b60b3000000.pdf). Language Resources and Evaluation, 45:8394, 2011. [[paper](https://www.researchgate.net/profile/Moshe_Koppel/publication/220147732_Authorship_attribution_in_the_wild/links/0deec52fd3fd6b60b3000000.pdf)]
 
 It was reimplemented as part of a science reproducibility study alongside [14 other authorship attribution approaches](https://github.com/search?q="Who+wrote+the+web"+user:pan-webis-de). The results of the reproducibility study can be found in
 
