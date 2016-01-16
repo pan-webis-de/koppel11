@@ -1,6 +1,6 @@
 # META_FNAME - name of the meta-file.json
 # GT_FNAME - name of the ground-truth.json
-# OUT_FNAME - file to write the output in (out.json)
+# OUT_FNAME - file to write the output in (answers.json)
 # encoding - encoding of the texts (from json)
 # language - language of the texts (from json)
 # upath - path of the 'unknown' dir in the corpus (from json)
