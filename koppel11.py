@@ -58,10 +58,7 @@ to avoid a (possibly) too big featurelist'''
 
 
 def selectFeatures(vector):
-    if len(vector) < featureLength:
-        raise NameError("Vektor zu kurz")
-    print(len(vector))
-    return sorted(vector, key=vector.get, reverse=True)[:featureLength]
+    return sorted(vector, key=vector.get, reverse=True)[:min(len(vector), featureLength)]
 
 '''- createFeatureMap:
 creates Feature Map that only saves
@@ -173,7 +170,7 @@ def getRandomString(s, length):
 def main():
     #
     parser = argparse.ArgumentParser(
-        description="Tira submission for PPM approach (teahan03)")
+        description="Tira submission for PPM approach (koppel11)")
     parser.add_argument("-i", action="store", help="path to corpus directory")
     parser.add_argument("-o", action="store", help="path to output directory")
     args = vars(parser.parse_args())
